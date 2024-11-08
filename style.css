@@ -1,0 +1,175 @@
+
+body{
+    padding: 20px;
+    background:radial-gradient(rgb(102, 238, 109),rgb(164, 138, 236),rgb(121, 241, 127));
+}
+.menu{
+    margin-top: 0px;
+    position: absolute;
+    background:linear-gradient(rgb(172, 245, 172),rgb(238, 177, 177),rgb(177, 177, 243));
+    padding: 50px;
+    font-size: 3rem;
+    text-align: center;
+    width: 92%;
+    height: 100%;
+    display: none;
+    animation: menupop 0.3s ease-in-out;
+}
+.menu h1{
+    margin-top: 0px;
+}
+.close-button{
+    margin-top: 500px;
+    font-size: 2rem;
+    padding: 20px;
+    border: 20px solid rgb(2, 63, 5);
+    border-radius: 100px;
+    font-weight: bolder;
+}
+.levels-container{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.levels-container button{
+   font-size: 2rem;
+    padding: 20px;
+    border: 20px solid rgb(8, 8, 109);
+    border-radius: 30px; 
+}
+
+.top{
+    display: grid;
+    place-items: center;
+}
+.levellabel,.menu-button{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    background-color: rgb(10, 10, 143);
+    width: 300px;
+    padding: 30px;
+    border: 10px solid green;
+    border-radius: 20px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.game-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap:100px ;
+    background-image: url(back.jpg);
+    background-size: cover;
+    padding: 50px;
+    border: 10px solid green;
+    border-radius: 30px;
+}
+.letters-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.letters-container button{
+    padding: 10px;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: aqua;
+    border: 4px solid green;
+    font-weight: bolder;
+}
+.word-container{
+    display: flex;
+}
+.letter-input1,.letter-input2,.letter-input3,
+.letter-input4,.letter-input5,.letter-input6,.letter-input7,.letter-input8,
+.letter-input9,.letter-input9,.letter-input10,.letter-input11,
+.letter-input12,.letter-input13,.letter-input14,.letter-input15,.letter-input16,.letter-input17,
+.letter-input18,.letter-input19,.letter-input20,.letter-input21,.letter-input22{
+    background-color: rgb(223, 220, 220);
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border: 4px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+.level-complete{
+    text-align: center;
+    display: none;
+    width:60%;
+    height:500px;
+    background-color: rgb(135, 207, 235);
+    position: absolute;
+    margin-top: -650px;
+    margin-left: 20%;
+    border-radius: 300px;
+    border-top: 30px solid rgb(10, 10, 73);
+    border-bottom: 30px solid rgb(11, 66, 11);
+    box-shadow: 1rem 1rem 1rem 1rem rgb(0, 0, 0);
+   
+}
+.level-complete h1{
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.level-complete button{
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    font-family:'Courier New', Courier, monospace;
+        width: 200px;
+        height: 100px;
+        margin: 50px;
+        background-color: green;
+        border: 5px solid blue;
+        border-radius: 30px;
+        box-shadow: 1rem 1rem rgb(4, 26, 4);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@keyframes pop{
+    0%{
+        width:0px;
+        height: 0px;
+        rotate: 0deg;
+        opacity:0;
+    }
+    100%{
+        width:60%;
+        height:500px;
+        rotate: 720deg;
+        opacity:1;
+    }
+}
+@keyframes wrong{
+    0%{
+        border:4.1px solid orangered;
+    }
+    100%{
+        border:4px solid orangered;
+    }
+}
+@keyframes wrongtwo{
+    0%{
+        border:4px solid orangered;
+    }
+    100%{
+        border:4px solid orangered;
+    }
+}
+@keyframes menupop{
+    0%{
+        width:0px;
+        height: 0px;
+    }
+    100%{
+        width:89%;
+        height: 100%;
+    }
+}
